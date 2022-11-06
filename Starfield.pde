@@ -43,13 +43,13 @@ class Particle {
 class OddballParticle extends Particle {
   OddballParticle(){
     myX = 0;
-    myY = (int)(Math.random()*500);
+    myY = (int)(Math.random()*400);
     mySize = 5;
     mySpeed = (float)(Math.random()*10)+1;
   }
   void showOld(){
     fill(255,105,180);
-    ellipse(myX,myY,mySize+20,mySize+20);
+    ellipse(myX,myY,mySize+10,mySize+10);
   }
   void moveOld() {
     myX = myX + (int)(Math.random()*10);
